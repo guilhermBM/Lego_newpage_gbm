@@ -1,0 +1,66 @@
+@use 'variaveis';
+
+.header {
+    padding: 0 30px;
+    display: flex;
+    background-color: variaveis.$corHeader;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    
+    &__logo{
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+    &__links {
+        width: 385px;
+        height: 3.4rem;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+
+        &__itens {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            white-space: nowrap;
+            margin-right: 3.1rem;
+
+            &__button {
+                text-transform: uppercase;
+                color: variaveis.$corBlack;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1rem;
+                border-bottom: 3px solid transparent;
+
+                &:hover {
+                    border-bottom: 3px solid variaveis.$corBlack;
+                }
+
+                &--new {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        padding: 8px 20px;
+                        border-radius: 4px;
+                        color: variaveis.$corDoTextoBtnNew;
+                        background: variaveis.$corDeFundoSecundaria;
+
+                        &:hover {
+                            background-color: variaveis.$corBlack;
+                            color: variaveis.$corDeFundoSecundaria;
+                        }
+                }
+            }
+        }
+    }
+}

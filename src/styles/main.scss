@@ -1,0 +1,31 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'section1';
+@use 'section2';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", serif;
+}
+
+button {
+    box-shadow: none;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    padding: 0;
+}
+
+ol,
+li,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.space10 {
+    margin-left: 10px;
+}

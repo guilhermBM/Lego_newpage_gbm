@@ -1,0 +1,68 @@
+@use 'variaveis';
+
+.section2  {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: 100%;
+    background-color: variaveis.$corDeFundoPrincipal;
+    color: variaveis.$corBlack;
+    padding: 32px 32px;
+    
+    &__color {
+        background-color: variaveis.$corDeFundoSecundaria;
+        width: 320px;
+        height: 560px;
+    }
+    
+    &__space {
+        margin-bottom: 16px;
+        
+    }
+
+    &__list {
+        padding-top: 2px;
+        padding-bottom: 24px;
+        display: flex;
+        gap: 50px;
+        
+        &__products {
+            padding: 40px 8px 16px;
+            gap: .75rem;
+            height: 100%;
+
+            &__product {
+                width: 300px;
+                height: 300px;
+                object-fit: contain;
+            }
+
+            &__image {
+                width: 18px;
+                height: 18px;
+            }
+
+            &__title {
+                margin-left: 10px;
+                margin-top: 16px;
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-weight: 300px;
+            }
+
+            &__price {
+                margin-left: 10px;
+                padding-bottom: 20px;
+            }
+
+            &__button {
+                background-color: variaveis.$corButton;
+                color: variaveis.$corBlack;
+                font-weight: bold;
+                margin-left: 10px;
+                padding: 16px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
